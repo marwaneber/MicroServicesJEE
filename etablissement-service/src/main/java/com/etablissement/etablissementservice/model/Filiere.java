@@ -1,0 +1,29 @@
+package com.etablissement.etablissementservice.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+import javax.persistence.OneToMany;
+import java.util.Collection;
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class Filiere {
+    private  Long id;
+    private  String LibLong;
+    private String LibCourt;
+    private String LibArLong;
+    private String LibArCourt;
+    private int nbrEtape;
+    private int nbrSemestre;
+    private int nbrAnneeDiplomantes;
+    private String responsableFiliere;
+    private Long idDepart;
+    private Long idTypeFormation;
+
+}
